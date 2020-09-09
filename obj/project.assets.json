@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\jslucas\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\birdc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jslucas\\source\\repos\\221StarterCode\\221StarterCode.csproj",
+      "projectUniqueName": "C:\\Users\\birdc\\source\\repos\\pa2-agcrofoot-1\\221StarterCode.csproj",
       "projectName": "221StarterCode",
-      "projectPath": "C:\\Users\\jslucas\\source\\repos\\221StarterCode\\221StarterCode.csproj",
-      "packagesPath": "C:\\Users\\jslucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jslucas\\source\\repos\\221StarterCode\\obj\\",
+      "projectPath": "C:\\Users\\birdc\\source\\repos\\pa2-agcrofoot-1\\221StarterCode.csproj",
+      "packagesPath": "C:\\Users\\birdc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\birdc\\source\\repos\\pa2-agcrofoot-1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jslucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\birdc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

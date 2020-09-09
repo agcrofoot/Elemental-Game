@@ -1,0 +1,13 @@
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\221StarterCode.exe
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\221StarterCode.deps.json
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\221StarterCode.runtimeconfig.json
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\221StarterCode.runtimeconfig.dev.json
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\221StarterCode.dll
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\221StarterCode.pdb
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\221StarterCode.csprojAssemblyReference.cache
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\221StarterCode.AssemblyInfoInputs.cache
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\221StarterCode.AssemblyInfo.cs
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\221StarterCode.csproj.CoreCompileInputs.cache
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\221StarterCode.dll
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\221StarterCode.pdb
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\221StarterCode.genruntimeconfig.cache
