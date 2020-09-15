@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\birdc\\source\\repos\\pa2-agcrofoot-1\\221StarterCode.csproj",
-      "projectName": "221StarterCode",
-      "projectPath": "C:\\Users\\birdc\\source\\repos\\pa2-agcrofoot-1\\221StarterCode.csproj",
+      "projectUniqueName": "C:\\Users\\birdc\\source\\repos\\pa2-agcrofoot-1\\pa2-agcrofoot-1.csproj",
+      "projectName": "pa2-agcrofoot-1",
+      "projectPath": "C:\\Users\\birdc\\source\\repos\\pa2-agcrofoot-1\\pa2-agcrofoot-1.csproj",
       "packagesPath": "C:\\Users\\birdc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\birdc\\source\\repos\\pa2-agcrofoot-1\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,0 +1,13 @@
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\pa2-agcrofoot-1.exe
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\pa2-agcrofoot-1.deps.json
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\pa2-agcrofoot-1.runtimeconfig.json
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\pa2-agcrofoot-1.runtimeconfig.dev.json
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\pa2-agcrofoot-1.dll
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\bin\Debug\netcoreapp3.1\pa2-agcrofoot-1.pdb
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\pa2-agcrofoot-1.csprojAssemblyReference.cache
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\pa2-agcrofoot-1.AssemblyInfoInputs.cache
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\pa2-agcrofoot-1.AssemblyInfo.cs
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\pa2-agcrofoot-1.csproj.CoreCompileInputs.cache
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\pa2-agcrofoot-1.dll
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\pa2-agcrofoot-1.pdb
+C:\Users\birdc\source\repos\pa2-agcrofoot-1\obj\Debug\netcoreapp3.1\pa2-agcrofoot-1.genruntimeconfig.cache
