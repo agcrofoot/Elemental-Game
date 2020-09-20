@@ -8,8 +8,10 @@ namespace pa2_agcrofoot_1
     {
         static void Main(string[] args)
         {
+            //Repeats the code
             while(true)
             {
+                //Creates Player 1
                 Console.Clear();
                 Console.WriteLine("Player 1: What is the name of your character?");
                 string char1Name = Console.ReadLine();
@@ -40,6 +42,7 @@ namespace pa2_agcrofoot_1
 
                 Character playerOne = Player1(char1Name, powerChoice1);
 
+                //Creates Player 2
                 Console.Clear();
                 Console.WriteLine("Player 2: What is the name of your character?");
                 string char2Name = Console.ReadLine();
@@ -72,14 +75,17 @@ namespace pa2_agcrofoot_1
 
                 Console.Clear();
 
+                //Displays the characters and their stats
                 Console.WriteLine("The chosen fighters are:");
                 playerOne.Stats();
                 playerTwo.Stats();
 
                 Console.WriteLine("Press 'Enter' to start the fight!!");
                 Console.ReadKey();
-
+                
+                //Starts game
                 StartGame(playerOne, playerTwo);
+                //Announces the winner based on health
                 if(playerOne.Health <= 0)
                 {
                     Console.Clear();
@@ -90,10 +96,12 @@ namespace pa2_agcrofoot_1
                     Console.Clear();
                     Console.WriteLine(playerTwo.Name + " has been defeated! " + playerOne.Name + " is the winner!!");
                 }
+                //Ends game
                 EndOfGame();
             }
         }
 
+        //Creates new character based off of input
         public static Character Player1(string char1Name, int powerChoice1)
         {
             if(powerChoice1 == 1)
@@ -110,6 +118,7 @@ namespace pa2_agcrofoot_1
             }
         }
 
+        //Creates new character based off of input
         public static Character Player2(string char2Name, int powerChoice2)
         {
             if(powerChoice2 == 1)
@@ -126,12 +135,15 @@ namespace pa2_agcrofoot_1
             }
         }
 
+        //Begins game
         public static void StartGame(Character playerOne, Character playerTwo)
         {
+            //Randomly chooses between 1 and 2 to determine the player that goes first
             Random num = new Random();
             int choice = num.Next(1, 3);
             if(choice == 1)
             {
+                //Sets player 1 to go first
                 Console.Clear();
                 Console.WriteLine("Player 1 " + playerOne.Name + " goes first!!");
                 playerOne.attackBehavior.Attack(playerOne, playerTwo);
@@ -143,6 +155,7 @@ namespace pa2_agcrofoot_1
             }
             else if (choice == 2)
             {
+                //Sets player 2 to go first
                 Console.Clear();
                 Console.WriteLine("Player 2 " + playerTwo.Name + " goes first!!");
                 playerTwo.attackBehavior.Attack(playerTwo, playerOne);
@@ -155,11 +168,13 @@ namespace pa2_agcrofoot_1
 
         }
 
+        //Alternates plays based on the player that went first
         public static void Alternate(Character first, Character second)
         {
             int oneHealth = first.Health;
             int twoHealth = second.Health;
             int healthPositive = first.Health * second.Health;
+            //While the sum of the health of the two characters is not 0, continue the loop
             while(healthPositive > 0)
             {
                 Console.Clear();
@@ -181,7 +196,7 @@ namespace pa2_agcrofoot_1
                 healthPositive = first.Health * second.Health;
             }
         }
-
+        //Allows user to play again or exit
         public static void EndOfGame()
         {
             Console.WriteLine("Good game! Play again?");
@@ -191,7 +206,7 @@ namespace pa2_agcrofoot_1
             while(true)
             {
                 try
-                {
+                {   
                     endChoice = int.Parse(Console.ReadLine());
                     if(endChoice < 1 || endChoice > 2)
                     {
