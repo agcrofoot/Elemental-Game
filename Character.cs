@@ -10,6 +10,7 @@ namespace pa2_agcrofoot_1
         public int Health{get; set;}
         public int AttackPower{get; set;}
         public int DefensePower{get; set;}
+        public string CharacterType{get; set;}
 
         //Instantiates the IAttack and IDefense
         public IAttack attackBehavior;
@@ -30,10 +31,10 @@ namespace pa2_agcrofoot_1
         public Character()
         {
             Random random = new Random();
-            int power = random.Next(0, 100);
+            MaxPower = random.Next(0, 100);
             Health = 100;
-            AttackPower = random.Next(power) + 1;
-            DefensePower = random.Next(power) + 1;
+            AttackPower = random.Next(MaxPower) + 1;
+            DefensePower = random.Next(MaxPower) + 1;
 
         }
 

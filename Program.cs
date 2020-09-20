@@ -106,15 +106,15 @@ namespace pa2_agcrofoot_1
         {
             if(powerChoice1 == 1)
             {
-                return new Earth(){Name = char1Name};
+                return new Earth(){Name = char1Name, CharacterType = "Earth"};
             }
             else if(powerChoice1 == 2)
             {
-                return new Wind(){Name = char1Name};
+                return new Wind(){Name = char1Name, CharacterType = "Wind"};
             }
             else 
             {
-                return new Fire(){Name = char1Name};
+                return new Fire(){Name = char1Name, CharacterType = "Fire"};
             }
         }
 
@@ -123,15 +123,15 @@ namespace pa2_agcrofoot_1
         {
             if(powerChoice2 == 1)
             {
-                return new Earth(){Name = char2Name};
+                return new Earth(){Name = char2Name, CharacterType = "Earth"};
             }
             else if(powerChoice2 == 2)
             {
-                return new Wind(){Name = char2Name};
+                return new Wind(){Name = char2Name, CharacterType = "Wind"};
             }
             else
             {
-                return new Fire(){Name = char2Name};
+                return new Fire(){Name = char2Name, CharacterType = "Fire"};
             }
         }
 

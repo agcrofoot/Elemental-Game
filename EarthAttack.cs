@@ -9,7 +9,7 @@ namespace pa2_agcrofoot_1
             //Announces attack
             Console.WriteLine(attacker.Name + " attacked " + defender.Name + " with Earth!");
             int attackPower;
-            if(defender.GetType().ToString() == "pa2-agcrofoot-1.WindCharacter")
+            if(defender.CharacterType == "Wind")
             {
                 //Increases power if opponent is a Wind character
                 attackPower = attacker.AttackPower + 5;
