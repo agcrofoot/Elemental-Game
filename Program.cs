@@ -8,79 +8,80 @@ namespace pa2_agcrofoot_1
     {
         static void Main(string[] args)
         {
-            Console.Clear();
-            Console.WriteLine("Player 1: What is the name of your character?");
-            string char1Name = Console.ReadLine();
-            Console.WriteLine("Player 1: Does " + char1Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
-            int powerChoice1 = 0;
             while(true)
             {
-                try
+                Console.Clear();
+                Console.WriteLine("Player 1: What is the name of your character?");
+                string char1Name = Console.ReadLine();
+                Console.WriteLine("Player 1: Does " + char1Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
+                int powerChoice1 = 0;
+                while(true)
                 {
-                    //Tries to parse the input and check if it is within the boundaries
-                    powerChoice1 = int.Parse(Console.ReadLine());
-                    if(powerChoice1 < 1 || powerChoice1 > 3)
+                    try
                     {
-                        Console.Clear();
-                        throw new Exception("Please enter a valid input. Does " + char1Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
+                        //Tries to parse the input and check if it is within the boundaries
+                        powerChoice1 = int.Parse(Console.ReadLine());
+                        if(powerChoice1 < 1 || powerChoice1 > 3)
+                        {
+                            Console.Clear();
+                            throw new Exception("Please enter a valid input.");
+                        }
+                        break;
                     }
-                    break;
-                }
-                catch(Exception e)
-                {
-                    //Presents error message
-                    Console.Clear(); 
-                    Console.WriteLine(e.Message);
-                    Console.WriteLine("Does " + char1Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
-                    continue;
-                }
-            }
-
-            Character playerOne = Player1(char1Name, powerChoice1);
-
-            Console.Clear();
-            Console.WriteLine("Player 2: What is the name of your character?");
-            string char2Name = Console.ReadLine();
-            Console.WriteLine("Player 2: Does " + char2Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
-            int powerChoice2 = 0;
-            while(true)
-            {
-                try
-                {
-                    //Tries to parse the input and check if it is within the boundaries
-                    powerChoice2 = int.Parse(Console.ReadLine());
-                    if(powerChoice2 < 1 || powerChoice2 > 3)
+                    catch(Exception e)
                     {
-                        Console.Clear();
-                        throw new Exception("Please enter a valid input. Does " + char2Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
+                        //Presents error message
+                        Console.Clear(); 
+                        Console.WriteLine(e.Message);
+                        Console.WriteLine("Does " + char1Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
+                        continue;
                     }
-                    break;
                 }
-                catch(Exception e)
+
+                Character playerOne = Player1(char1Name, powerChoice1);
+
+                Console.Clear();
+                Console.WriteLine("Player 2: What is the name of your character?");
+                string char2Name = Console.ReadLine();
+                Console.WriteLine("Player 2: Does " + char2Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
+                int powerChoice2 = 0;
+                while(true)
                 {
-                    //Presents error message 
-                    Console.Clear();
-                    Console.WriteLine(e.Message);
-                    Console.WriteLine("Does " + char2Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
-                    continue;
+                    try
+                    {
+                        //Tries to parse the input and check if it is within the boundaries
+                        powerChoice2 = int.Parse(Console.ReadLine());
+                        if(powerChoice2 < 1 || powerChoice2 > 3)
+                        {
+                            Console.Clear();
+                            throw new Exception("Please enter a valid input.");
+                        }
+                        break;
+                    }
+                    catch(Exception e)
+                    {
+                        //Presents error message 
+                        Console.Clear();
+                        Console.WriteLine(e.Message);
+                        Console.WriteLine("Does " + char2Name + " draw their power from Earth (1), Wind (2), or Fire (3)?");
+                        continue;
+                    }
                 }
+            
+                Character playerTwo = Player2(char2Name, powerChoice2);
+
+                Console.Clear();
+
+                Console.WriteLine("The chosen fighters are:");
+                playerOne.Stats();
+                playerTwo.Stats();
+
+                Console.WriteLine("Press 'Enter' to start the fight!!");
+                Console.ReadKey();
+
+                StartGame(playerOne, playerTwo);
+                EndOfGame();
             }
-            
-            Character playerTwo = Player2(char2Name, powerChoice2);
-
-            Console.Clear();
-
-            Console.WriteLine("The chosen fighters are:");
-            playerOne.Stats();
-            playerTwo.Stats();
-
-            Console.WriteLine("Press 'Enter' to start the fight!!");
-            Console.ReadKey();
-
-            StartGame(playerOne, playerTwo);
-            EndOfGame();
-            
-
         }
 
         public static Character Player1(string char1Name, int powerChoice1)
@@ -164,8 +165,9 @@ namespace pa2_agcrofoot_1
                     second.Stats();
                     Console.WriteLine("Press 'Enter' to continue");
                     Console.ReadKey();
+                    healthPositive = first.Health * second.Health;
                 }
-                else if(healthPositive < 0)
+                else if(healthPositive <= 0)
                 {
                     if(first.Health <= 0)
                     {
@@ -205,7 +207,6 @@ namespace pa2_agcrofoot_1
                         Console.WriteLine("Press 'Enter' to return to the menu.");
                         Console.ReadKey();
                         break;
-                        
                     }
                     else if(endChoice == 2)
                     {
@@ -213,8 +214,8 @@ namespace pa2_agcrofoot_1
                         Console.WriteLine("Goodbye!");
                         Console.ReadKey();
                         System.Environment.Exit(0);
+                        break;
                     }
-                    break;
                 }
                 catch(Exception e)
                 {
