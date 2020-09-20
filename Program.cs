@@ -40,7 +40,7 @@ namespace pa2_agcrofoot_1
                     }
                 }
 
-                Character playerOne = Player1(char1Name, powerChoice1);
+                Character playerOne = Player(char1Name, powerChoice1);
 
                 //Creates Player 2
                 Console.Clear();
@@ -71,7 +71,7 @@ namespace pa2_agcrofoot_1
                     }
                 }
             
-                Character playerTwo = Player2(char2Name, powerChoice2);
+                Character playerTwo = Player(char2Name, powerChoice2);
 
                 Console.Clear();
 
@@ -102,38 +102,38 @@ namespace pa2_agcrofoot_1
         }
 
         //Creates new character based off of input
-        public static Character Player1(string char1Name, int powerChoice1)
+        public static Character Player(string charName, int powerChoice)
         {
-            if(powerChoice1 == 1)
+            if(powerChoice == 1)
             {
-                return new Earth(){Name = char1Name, CharacterType = "Earth"};
+                return new Earth(){Name = charName, CharacterType = "Earth"};
             }
-            else if(powerChoice1 == 2)
+            else if(powerChoice == 2)
             {
-                return new Wind(){Name = char1Name, CharacterType = "Wind"};
+                return new Wind(){Name = charName, CharacterType = "Wind"};
             }
             else 
             {
-                return new Fire(){Name = char1Name, CharacterType = "Fire"};
+                return new Fire(){Name = charName, CharacterType = "Fire"};
             }
         }
 
         //Creates new character based off of input
-        public static Character Player2(string char2Name, int powerChoice2)
-        {
-            if(powerChoice2 == 1)
-            {
-                return new Earth(){Name = char2Name, CharacterType = "Earth"};
-            }
-            else if(powerChoice2 == 2)
-            {
-                return new Wind(){Name = char2Name, CharacterType = "Wind"};
-            }
-            else
-            {
-                return new Fire(){Name = char2Name, CharacterType = "Fire"};
-            }
-        }
+        // public static Character Player2(string char2Name, int powerChoice2)
+        // {
+        //     if(powerChoice2 == 1)
+        //     {
+        //         return new Earth(){Name = char2Name, CharacterType = "Earth"};
+        //     }
+        //     else if(powerChoice2 == 2)
+        //     {
+        //         return new Wind(){Name = char2Name, CharacterType = "Wind"};
+        //     }
+        //     else
+        //     {
+        //         return new Fire(){Name = char2Name, CharacterType = "Fire"};
+        //     }
+        // }
 
         //Begins game
         public static void StartGame(Character playerOne, Character playerTwo)
