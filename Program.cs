@@ -80,6 +80,16 @@ namespace pa2_agcrofoot_1
                 Console.ReadKey();
 
                 StartGame(playerOne, playerTwo);
+                if(playerOne.Health <= 0)
+                {
+                    Console.Clear();
+                    Console.WriteLine(playerOne.Name + " has been defeated! " + playerTwo.Name + " is the winner!!");
+                }
+                else if(playerTwo.Health <= 0)
+                {
+                    Console.Clear();
+                    Console.WriteLine(playerTwo.Name + " has been defeated! " + playerOne.Name + " is the winner!!");
+                }
                 EndOfGame();
             }
         }
@@ -167,19 +177,7 @@ namespace pa2_agcrofoot_1
                     Console.ReadKey();
                     healthPositive = first.Health * second.Health;
                 }
-                else if(healthPositive <= 0)
-                {
-                    if(first.Health <= 0)
-                    {
-                        Console.Clear();
-                        Console.WriteLine(first.Name + " has been defeated! " + second.Name + " is the winner!!");
-                    }
-                    else if(second.Health <= 0)
-                    {
-                        Console.Clear();
-                        Console.WriteLine(second.Name + " has been defeated! " + first.Name + " is the winner!!");
-                    }
-                }  
+                
                 healthPositive = first.Health * second.Health;
             }
         }
