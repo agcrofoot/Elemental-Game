@@ -118,23 +118,6 @@ namespace pa2_agcrofoot_1
             }
         }
 
-        //Creates new character based off of input
-        // public static Character Player2(string char2Name, int powerChoice2)
-        // {
-        //     if(powerChoice2 == 1)
-        //     {
-        //         return new Earth(){Name = char2Name, CharacterType = "Earth"};
-        //     }
-        //     else if(powerChoice2 == 2)
-        //     {
-        //         return new Wind(){Name = char2Name, CharacterType = "Wind"};
-        //     }
-        //     else
-        //     {
-        //         return new Fire(){Name = char2Name, CharacterType = "Fire"};
-        //     }
-        // }
-
         //Begins game
         public static void StartGame(Character playerOne, Character playerTwo)
         {
